@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batak Ustası — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root {
+    --primary: #0D1B3E;
+    --accent: #C9A227;
+    --text: #1a1a1a;
+    --muted: #555;
+    --bg: #fafafa;
+    --border: #e0e0e0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  h1 {
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+  }
+  h2 {
+    color: var(--primary);
+    margin-top: 2em;
+    font-size: 1.25em;
+  }
+  h3 {
+    color: var(--primary);
+    font-size: 1.05em;
+    margin-top: 1.5em;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+  .meta strong { color: var(--text); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+  }
+  code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9em;
+  }
+  a { color: var(--primary); }
+  a:hover { color: var(--accent); }
+  .lang-switch {
+    text-align: center;
+    background: var(--primary);
+    padding: 12px;
+    margin: 0;
+  }
+  .lang-switch a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+  }
+  hr.section-break {
+    border: 0;
+    border-top: 2px dashed var(--border);
+    margin: 4em 0 3em;
+  }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="#tr">Türkçe</a> · <a href="#en">English</a>
+</div>
+
+<div class="container">
+
+<!-- ============== TÜRKÇE ============== -->
+<section id="tr">
+<h1>Gizlilik Politikası — Batak Ustası</h1>
+
+<p class="meta">
+  <strong>Son güncelleme:</strong> 22 Nisan 2026<br>
+  <strong>Uygulama:</strong> Batak Ustası (iOS / Android)<br>
+  <strong>Geliştirici:</strong> Fatih Tutucu (bağımsız geliştirici)<br>
+  <strong>İletişim:</strong> <a href="mailto:ftutucu@gmail.com">ftutucu@gmail.com</a>
+</p>
+
+<p>Bu gizlilik politikası, "Batak Ustası" uygulamasının (bundan sonra "Uygulama") kullanıcı verilerini nasıl işlediğini açıklar.</p>
+
+<h2>1. Özet</h2>
+<p>Uygulama <strong>çevrimdışı</strong> çalışır. Hesap oluşturma, kayıt olma, bulut senkronizasyonu veya çevrimiçi çok oyunculu modu <strong>yoktur</strong>. Oyun verisi (istatistikler, başarımlar, ayarlar, devam eden oyun) <strong>yalnızca cihazında</strong> saklanır; geliştiriciye gönderilmez.</p>
+<p>Uygulama yalnızca üç üçüncü taraf servisi kullanır:</p>
+<ol>
+  <li><strong>Google AdMob</strong> — reklam göstermek için</li>
+  <li><strong>Apple App Store / Google Play</strong> — satın alma işlemleri için</li>
+  <li><strong>Sentry</strong> — (etkinleştirildiğinde) çökme raporları için</li>
+</ol>
+
+<h2>2. Cihazda saklanan veriler</h2>
+<p>Uygulama aşağıdaki verileri <strong>yalnızca cihazının yerel depolamasında</strong> (AsyncStorage) tutar. Bu veriler sunucuya gönderilmez:</p>
+<table>
+  <thead><tr><th>Anahtar</th><th>İçerik</th></tr></thead>
+  <tbody>
+    <tr><td><code>settings</code></td><td>Uygulama ayarları (ses, titreşim, reklamın kaldırılıp kaldırılmadığı)</td></tr>
+    <tr><td><code>batak_last_setup</code></td><td>Son oyun kurulumu (oyuncu adı, zorluk seviyesi)</td></tr>
+    <tr><td><code>batak_achievements</code></td><td>Başarım ilerlemen</td></tr>
+    <tr><td><code>batak_player_stats</code></td><td>Oyun istatistiklerin (galibiyet, tutulan ihale vb.)</td></tr>
+    <tr><td><code>batak_stats_migrations</code></td><td>İstatistik veri yapısı sürüm bayrakları (teknik, kişisel veri içermez)</td></tr>
+    <tr><td><code>batak_game_state_in_progress</code></td><td>Devam eden oyunun kaydı</td></tr>
+  </tbody>
+</table>
+<p>Uygulamayı silersen bu veriler de silinir. Uygulama içinden istatistikleri ve başarımları sıfırlama seçeneği de sunulmaktadır (İstatistik ekranı → Sıfırla).</p>
+
+<h2>3. Üçüncü taraf servisler</h2>
+
+<h3>3.1 Google AdMob (reklam)</h3>
+<p>Uygulama, ücretsiz sürümde oyun sonunda <strong>interstitial (tam ekran)</strong> reklam gösterir. AdMob aşağıdaki verileri işleyebilir:</p>
+<ul>
+  <li>Reklam kimliği (IDFA iOS / Advertising ID Android)</li>
+  <li>Cihaz modeli, işletim sistemi sürümü, yaklaşık konum (IP tabanlı)</li>
+  <li>Reklam etkileşim verileri (gösterim, tıklama)</li>
+</ul>
+<p><strong>Kişiselleştirilmiş reklamlar:</strong> iOS'ta ilk açılışta <strong>App Tracking Transparency (ATT)</strong> izni sorulur. İzin verirsen kişiselleştirilmiş, vermezsen genel reklamlar gösterilir. Android'de cihaz ayarlarından reklam kimliğini sıfırlayabilir veya kişiselleştirmeyi kapatabilirsin.</p>
+<p>AdMob gizlilik politikası: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<h3>3.2 Apple / Google satın alma</h3>
+<p>"Reklamları Kaldır" (₺49,99, tek seferlik) satın alması doğrudan Apple App Store veya Google Play üzerinden işlenir. Ödeme ve fatura bilgilerin geliştiriciye iletilmez — yalnızca platform tarafından sağlanan satın alma makbuzu doğrulanır. Geliştirici kredi kartı veya ödeme bilgilerine erişmez.</p>
+<ul>
+  <li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+  <li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+
+<h3>3.3 Sentry (çökme raporları)</h3>
+<p>Uygulama, yalnızca üretim sürümünde çökme ve hata raporlarını otomatik olarak Sentry'ye gönderebilir. Bu raporlarda:</p>
+<ul>
+  <li>Cihaz modeli, işletim sistemi sürümü</li>
+  <li>Hata yığın izi (stack trace)</li>
+  <li>Uygulama sürümü</li>
+</ul>
+<p>gibi teknik bilgiler yer alır; kişisel veri, oyun istatistiğin veya kart hareketin yer almaz. Sentry gizlilik politikası: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></p>
+
+<h2>4. Çocuklar</h2>
+<p>Uygulama 13 yaş ve üzeri kullanıcılar içindir. Bilerek 13 yaşın altındaki kullanıcılardan veri toplamayız.</p>
+
+<h2>5. Haklarını</h2>
+<p>Türkiye'de ikamet eden kullanıcılar <strong>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK)</strong> uyarınca aşağıdaki haklara sahiptir:</p>
+<ul>
+  <li>Verilerinin işlenip işlenmediğini öğrenme</li>
+  <li>İşlendiyse bilgi talep etme</li>
+  <li>Silinmesini isteme</li>
+</ul>
+<p>Uygulama cihaz dışına veri göndermediği için bu talepleri doğrudan kendin uygulayabilirsin (uygulamayı silmek veya ayarlardan sıfırlama). Üçüncü taraf servisler (AdMob, Sentry) için ilgili servisin kendi politikasına başvurman gerekir.</p>
+<p>AB/EEA kullanıcıları için GDPR kapsamındaki haklar da benzer şekilde geçerlidir.</p>
+
+<h2>6. Veri güvenliği</h2>
+<p>Uygulama yerel verilerin bütünlüğünü korumak için platformun standart izolasyon mekanizmalarını (iOS sandbox, Android app-specific storage) kullanır. Cihaz güvenliği için kod kilidi veya biyometrik kullanman önerilir.</p>
+
+<h2>7. Değişiklikler</h2>
+<p>Bu politika zaman zaman güncellenebilir. Güncellemeler bu sayfada yayımlanır; önemli değişikliklerde uygulama içinde bildirim gösterilebilir.</p>
+
+<h2>8. İletişim</h2>
+<p>Sorular için: <a href="mailto:ftutucu@gmail.com"><strong>ftutucu@gmail.com</strong></a></p>
+</section>
+
+<hr class="section-break">
+
+<!-- ============== ENGLISH ============== -->
+<section id="en">
+<h1>Privacy Policy — Batak Ustası</h1>
+
+<p class="meta">
+  <strong>Last updated:</strong> April 22, 2026<br>
+  <strong>App:</strong> Batak Ustası (iOS / Android)<br>
+  <strong>Developer:</strong> Fatih Tutucu (independent developer)<br>
+  <strong>Contact:</strong> <a href="mailto:ftutucu@gmail.com">ftutucu@gmail.com</a>
+</p>
+
+<p>This privacy policy describes how the "Batak Ustası" application (hereinafter "the App") handles user data.</p>
+
+<h2>1. Summary</h2>
+<p>The App runs <strong>offline</strong>. There is <strong>no</strong> account creation, sign-up, cloud sync, or online multiplayer. Game data (statistics, achievements, settings, game-in-progress) is stored <strong>only on your device</strong> and is never sent to the developer.</p>
+<p>The App only uses three third-party services:</p>
+<ol>
+  <li><strong>Google AdMob</strong> — to display ads</li>
+  <li><strong>Apple App Store / Google Play</strong> — to handle purchases</li>
+  <li><strong>Sentry</strong> — (when enabled) for crash reports</li>
+</ol>
+
+<h2>2. Data stored on your device</h2>
+<p>The App stores the following data <strong>only in your device's local storage</strong> (AsyncStorage). This data is never transmitted to any server:</p>
+<table>
+  <thead><tr><th>Key</th><th>Content</th></tr></thead>
+  <tbody>
+    <tr><td><code>settings</code></td><td>App settings (sound, haptics, whether ads are removed)</td></tr>
+    <tr><td><code>batak_last_setup</code></td><td>Last game setup (player name, difficulty)</td></tr>
+    <tr><td><code>batak_achievements</code></td><td>Your achievement progress</td></tr>
+    <tr><td><code>batak_player_stats</code></td><td>Your game statistics (wins, fulfilled bids, etc.)</td></tr>
+    <tr><td><code>batak_stats_migrations</code></td><td>Internal schema migration flags (technical, no personal data)</td></tr>
+    <tr><td><code>batak_game_state_in_progress</code></td><td>Saved state of an in-progress game</td></tr>
+  </tbody>
+</table>
+<p>Uninstalling the App removes this data. You can also reset statistics and achievements from inside the App (Stats screen → Reset).</p>
+
+<h2>3. Third-party services</h2>
+
+<h3>3.1 Google AdMob (ads)</h3>
+<p>In the free version the App shows an <strong>interstitial (full-screen)</strong> ad at the end of a game. AdMob may process:</p>
+<ul>
+  <li>Advertising identifier (IDFA on iOS / Advertising ID on Android)</li>
+  <li>Device model, OS version, approximate location (IP-based)</li>
+  <li>Ad interaction data (impressions, clicks)</li>
+</ul>
+<p><strong>Personalized ads:</strong> On iOS you are asked for <strong>App Tracking Transparency (ATT)</strong> permission at first launch. If granted, you'll see personalized ads; otherwise, generic ads. On Android you can reset your advertising ID or disable ad personalization in system settings.</p>
+<p>AdMob privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+
+<h3>3.2 Apple / Google purchases</h3>
+<p>The "Remove Ads" purchase (₺49.99, one-time) is processed directly through the Apple App Store or Google Play. Your payment and billing information is not transmitted to the developer — only the purchase receipt provided by the platform is verified. The developer does not access your credit card or payment details.</p>
+<ul>
+  <li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+  <li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+
+<h3>3.3 Sentry (crash reports)</h3>
+<p>In production builds, the App may automatically send crash and error reports to Sentry. These reports include:</p>
+<ul>
+  <li>Device model, OS version</li>
+  <li>Error stack trace</li>
+  <li>App version</li>
+</ul>
+<p>Only such technical information is included — no personal data, game statistics, or card actions. Sentry privacy policy: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></p>
+
+<h2>4. Children</h2>
+<p>The App is intended for users aged 13 and above. We do not knowingly collect data from users under 13.</p>
+
+<h2>5. Your rights</h2>
+<p>Residents of Türkiye are protected under <strong>Law No. 6698 on the Protection of Personal Data (KVKK)</strong> and have the following rights:</p>
+<ul>
+  <li>To know whether their data is processed</li>
+  <li>To request information about any processing</li>
+  <li>To request deletion</li>
+</ul>
+<p>Since the App does not send data off-device, you can exercise these rights directly (uninstall the App or use in-app reset). For third-party services (AdMob, Sentry) please refer to their own privacy policies.</p>
+<p>EU/EEA users have equivalent rights under GDPR.</p>
+
+<h2>6. Data security</h2>
+<p>The App relies on the platform's standard isolation mechanisms (iOS sandbox, Android app-specific storage) to protect local data integrity. Using a device passcode or biometric lock is recommended.</p>
+
+<h2>7. Changes</h2>
+<p>This policy may be updated from time to time. Updates will be published on this page; significant changes may be announced within the App.</p>
+
+<h2>8. Contact</h2>
+<p>Questions: <a href="mailto:ftutucu@gmail.com"><strong>ftutucu@gmail.com</strong></a></p>
+</section>
+
+</div>
+</body>
+</html>
